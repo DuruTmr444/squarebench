@@ -1,0 +1,438 @@
+{
+    "machine_info": {
+        "node": "localhost",
+        "processor": "arm",
+        "machine": "arm64",
+        "python_compiler": "Clang 17.0.0 (clang-1700.0.13.3)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.10.19",
+        "python_version": "3.10.19",
+        "python_build": [
+            "main",
+            "Oct  9 2025 15:25:03"
+        ],
+        "release": "24.6.0",
+        "system": "Darwin",
+        "cpu": {
+            "python_version": "3.10.19.final.0 (64 bit)",
+            "cpuinfo_version": [
+                9,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "9.0.0",
+            "arch": "ARM_8",
+            "bits": 64,
+            "count": 10,
+            "arch_string_raw": "arm64",
+            "brand_raw": "Apple M1 Max"
+        }
+    },
+    "commit_info": {
+        "id": "unversioned",
+        "time": null,
+        "author_time": null,
+        "dirty": false,
+        "project": "squarebench",
+        "branch": "(unknown)"
+    },
+    "benchmarks": [
+        {
+            "group": "Transpile - Device",
+            "name": "test_QFT_100_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_QFT_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.15147862501908094,
+                "input_num_qubits": 100,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "sx": 18045,
+                    "rz": 9642,
+                    "cz": 9039,
+                    "x": 603
+                },
+                "output_gate_count_2q": 9039,
+                "output_depth_2q": 2195
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 15.999363583978266,
+                "max": 15.999363583978266,
+                "mean": 15.999363583978266,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 15.999363583978266,
+                "iqr": 0.0,
+                "q1": 15.999363583978266,
+                "q3": 15.999363583978266,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 15.999363583978266,
+                "hd15iqr": 15.999363583978266,
+                "ops": 0.06250248609897198,
+                "total": 15.999363583978266,
+                "data": [
+                    15.999363583978266
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_QV_100_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_QV_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.9255499170394614,
+                "input_num_qubits": 100,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "sx": 162202,
+                    "cz": 72670,
+                    "rz": 61772,
+                    "x": 1194
+                },
+                "output_gate_count_2q": 72670,
+                "output_depth_2q": 5801
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 66.4224946249742,
+                "max": 66.4224946249742,
+                "mean": 66.4224946249742,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 66.4224946249742,
+                "iqr": 0.0,
+                "q1": 66.4224946249742,
+                "q3": 66.4224946249742,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 66.4224946249742,
+                "hd15iqr": 66.4224946249742,
+                "ops": 0.015055140666517662,
+                "total": 66.4224946249742,
+                "data": [
+                    66.4224946249742
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_circSU2_89_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_circSU2_89_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 89,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "rz": 1716,
+                    "sx": 1427,
+                    "cz": 384,
+                    "x": 10
+                },
+                "output_gate_count_2q": 384,
+                "output_depth_2q": 326
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 3.472583749971818,
+                "max": 3.472583749971818,
+                "mean": 3.472583749971818,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 3.472583749971818,
+                "iqr": 0.0,
+                "q1": 3.472583749971818,
+                "q3": 3.472583749971818,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 3.472583749971818,
+                "hd15iqr": 3.472583749971818,
+                "ops": 0.2879700165642126,
+                "total": 3.472583749971818,
+                "data": [
+                    3.472583749971818
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_circSU2_100_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_circSU2_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "rz": 1800,
+                    "sx": 1397,
+                    "cz": 300
+                },
+                "output_gate_count_2q": 300,
+                "output_depth_2q": 300
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.1928966660052538,
+                "max": 0.1928966660052538,
+                "mean": 0.1928966660052538,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 0.1928966660052538,
+                "iqr": 0.0,
+                "q1": 0.1928966660052538,
+                "q3": 0.1928966660052538,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 0.1928966660052538,
+                "hd15iqr": 0.1928966660052538,
+                "ops": 5.184122777802513,
+                "total": 0.1928966660052538,
+                "data": [
+                    0.1928966660052538
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_BV_100_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_BV_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "sx": 551,
+                    "rz": 401,
+                    "cz": 279,
+                    "measure": 99,
+                    "x": 7,
+                    "barrier": 1
+                },
+                "output_gate_count_2q": 279,
+                "output_depth_2q": 233
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.5631669160211459,
+                "max": 0.5631669160211459,
+                "mean": 0.5631669160211459,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 0.5631669160211459,
+                "iqr": 0.0,
+                "q1": 0.5631669160211459,
+                "q3": 0.5631669160211459,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 0.5631669160211459,
+                "hd15iqr": 0.5631669160211459,
+                "ops": 1.7756724898989837,
+                "total": 0.5631669160211459,
+                "data": [
+                    0.5631669160211459
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_square_heisenberg_100_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_square_heisenberg_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.02581491699675098,
+                "input_num_qubits": 100,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "sx": 1378,
+                    "rz": 880,
+                    "cz": 540,
+                    "x": 72
+                },
+                "output_gate_count_2q": 540,
+                "output_depth_2q": 108
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.05457829195074737,
+                "max": 0.05457829195074737,
+                "mean": 0.05457829195074737,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 0.05457829195074737,
+                "iqr": 0.0,
+                "q1": 0.05457829195074737,
+                "q3": 0.05457829195074737,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 0.05457829195074737,
+                "hd15iqr": 0.05457829195074737,
+                "ops": 18.322302957051527,
+                "total": 0.05457829195074737,
+                "data": [
+                    0.05457829195074737
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_QAOA_100_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_QAOA_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.008309249999001622,
+                "input_num_qubits": 100,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "sx": 10713,
+                    "cz": 5616,
+                    "rz": 5572,
+                    "x": 380
+                },
+                "output_gate_count_2q": 5616,
+                "output_depth_2q": 871
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 11.817719665996265,
+                "max": 11.817719665996265,
+                "mean": 11.817719665996265,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 11.817719665996265,
+                "iqr": 0.0,
+                "q1": 11.817719665996265,
+                "q3": 11.817719665996265,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 11.817719665996265,
+                "hd15iqr": 11.817719665996265,
+                "ops": 0.08461869364504826,
+                "total": 11.817719665996265,
+                "data": [
+                    11.817719665996265
+                ],
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_BVlike_simplification_transpile",
+            "fullname": "benchpress/qiskit_gym/test_summit_duto.py::TestWorkoutDeviceTranspile100Q::test_BVlike_simplification_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 120,
+                "output_circuit_operations": {
+                    "x": 1,
+                    "rz": 1
+                },
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 0.001,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.007211167016066611,
+                "max": 0.007211167016066611,
+                "mean": 0.007211167016066611,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 0.007211167016066611,
+                "iqr": 0.0,
+                "q1": 0.007211167016066611,
+                "q3": 0.007211167016066611,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 0.007211167016066611,
+                "hd15iqr": 0.007211167016066611,
+                "ops": 138.6738093531854,
+                "total": 0.007211167016066611,
+                "data": [
+                    0.007211167016066611
+                ],
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2026-04-17T11:12:54.139800+00:00",
+    "version": "4.0.0"
+}

@@ -1,0 +1,7 @@
+num_qubits,method,num_samples,n_success,avg_2q_gates,avg_2q_depth
+4,qiskit,100,100,9.79,8.93
+4,qiskit_hf,100,100,9.59,7.78
+4,duru,100,100,7.95,6.53
+5,qiskit,100,100,16.67,14.74
+5,qiskit_hf,100,100,17.22,12.44
+5,duru,100,100,12.48,9.18

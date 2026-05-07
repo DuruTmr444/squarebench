@@ -1,0 +1,17 @@
+# Environment
+.env
+.venv/
+
+# Large training artifacts
+runs/
+square_lattice_models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.benchmarks/
+
+# Misc
+*.pkl
