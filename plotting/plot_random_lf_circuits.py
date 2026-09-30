@@ -263,9 +263,7 @@ def plot(rows, backend_name="miami", panels="all"):
         axes[-1].set_xticklabels([f"{n}q" for n in qubit_counts])
         axes[-1].set_xlabel("Number of Qubits")
         fig.suptitle(
-            f"Linear Function Synthesis on {_backend_label(backend_name)}\n"
-            "Qiskit vs Qiskit HF AI vs SQR HF AI"
-            + (" — 2Q Depth" if panels == "depth" else ""),
+            f"Linear Function Synthesis on {_backend_label(backend_name)}\n",
             fontsize=13,
         )
         plt.tight_layout()

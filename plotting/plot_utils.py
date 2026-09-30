@@ -24,7 +24,7 @@ def next_plot_path(directory, stem, ext="png"):
 
 METHODS = ["qiskit", "qiskit_hf", "sqr"]
 COLORS  = {"qiskit": "#9C27B0", "qiskit_hf": "#FF9800", "sqr": "#4CAF50"}
-LABELS  = {"qiskit": "Qiskit",  "qiskit_hf": "Qiskit HF AI", "sqr": "SQR HF AI"}
+LABELS  = {"qiskit": "Qiskit",  "qiskit_hf": "QTS", "sqr": "SQR"}
 
 
 def bar_group(ax, x, vals_by_method, w=0.25, errs_by_method=None, log=False):
@@ -41,10 +41,10 @@ def bar_group(ax, x, vals_by_method, w=0.25, errs_by_method=None, log=False):
         for xi, v in zip(x + offset, vals):
             if np.isnan(float(v)):
                 ax.text(xi, 0.5 if not log else 1, "N/A",
-                        ha="center", va="bottom", fontsize=6, color="grey", rotation=90)
+                        ha="center", va="bottom", fontsize=9, color="grey", rotation=90)
             else:
                 ax.text(xi, float(v), f"{int(v)}" if v == int(v) else f"{v:.1f}",
-                        ha="center", va="bottom", fontsize=6, fontweight="bold", color="black")
+                        ha="center", va="bottom", fontsize=9, fontweight="bold", color="black", rotation=90)
     if log:
         ax.set_yscale("log")
 
@@ -70,4 +70,7 @@ def lollipop_pct(ax, x, ref_vals, cmp_vals, color, label):
         va = "top" if v < 0 else "bottom"
         offset_y = -1.5 if v < 0 else 1.5
         ax.text(xi, v + offset_y, f"{v:+.1f}%", ha="center", va=va,
-                fontsize=7, fontweight="bold", color=stem_color)
+                fontsize=9, fontweight="bold", color=stem_color)
+    ymin, ymax = ax.get_ylim()
+    y_range = max(ymax - ymin, 1.0)
+    ax.set_ylim(ymin - 0.05 * y_range, ymax + 0.15 * y_range)

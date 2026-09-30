@@ -107,7 +107,7 @@ def plot_bar_panels(axes, data, tests, x, legend_patches):
 
 def plot_total_panel(ax, data, tests, x, pct_legend):
     ref_total = get_vals(data["qiskit"], tests, "total_gates")
-    lollipop_pct(ax, x,        ref_total, get_vals(data["qiskit_hf"], tests, "total_gates"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
+    lollipop_pct(ax, x - 0.15, ref_total, get_vals(data["qiskit_hf"], tests, "total_gates"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
     lollipop_pct(ax, x + 0.15, ref_total, get_vals(data["sqr"],       tests, "total_gates"), COLORS["sqr"],       LABELS["sqr"])
     style_pct_axis(ax, tests)
     ax.set_title("Total Gate Count % Difference vs Qiskit  [negative = fewer gates]")
@@ -116,13 +116,13 @@ def plot_total_panel(ax, data, tests, x, pct_legend):
 
 def plot_quality_panels(axes, data, tests, x):
     ref_2q = get_vals(data["qiskit"], tests, "2q")
-    lollipop_pct(axes[0], x,        ref_2q, get_vals(data["qiskit_hf"], tests, "2q"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
+    lollipop_pct(axes[0], x - 0.15, ref_2q, get_vals(data["qiskit_hf"], tests, "2q"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
     lollipop_pct(axes[0], x + 0.15, ref_2q, get_vals(data["sqr"],       tests, "2q"), COLORS["sqr"],       LABELS["sqr"])
     style_pct_axis(axes[0], tests)
     axes[0].set_title("2Q Gate Count % Difference vs Qiskit  [negative = fewer gates]")
 
     ref_depth = get_vals(data["qiskit"], tests, "depth")
-    lollipop_pct(axes[1], x,        ref_depth, get_vals(data["qiskit_hf"], tests, "depth"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
+    lollipop_pct(axes[1], x - 0.15, ref_depth, get_vals(data["qiskit_hf"], tests, "depth"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
     lollipop_pct(axes[1], x + 0.15, ref_depth, get_vals(data["sqr"],       tests, "depth"), COLORS["sqr"],       LABELS["sqr"])
     style_pct_axis(axes[1], tests)
     axes[1].set_title("2Q Gate Depth % Difference vs Qiskit  [negative = shallower]")
@@ -191,9 +191,10 @@ def main():
         axes[0].legend(handles=legend_patches, loc="upper left")
 
         ref_depth = get_vals(data["qiskit"], tests, "depth")
-        lollipop_pct(axes[1], x,        ref_depth, get_vals(data["qiskit_hf"], tests, "depth"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
+        lollipop_pct(axes[1], x - 0.15, ref_depth, get_vals(data["qiskit_hf"], tests, "depth"), COLORS["qiskit_hf"], LABELS["qiskit_hf"])
         lollipop_pct(axes[1], x + 0.15, ref_depth, get_vals(data["sqr"],       tests, "depth"), COLORS["sqr"],       LABELS["sqr"])
         style_pct_axis(axes[1], tests)
+        axes[1].set_ylim(top=25)
         axes[1].set_title("2Q Gate Depth % Difference vs Qiskit  [negative = shallower]")
         axes[1].legend(handles=pct_legend, loc="upper left", fontsize=8)
         stem = "benchpress_qasm_depth"
