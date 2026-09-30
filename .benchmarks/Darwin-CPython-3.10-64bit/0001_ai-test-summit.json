@@ -1,0 +1,555 @@
+{
+    "machine_info": {
+        "node": "Durus-MacBook-Pro.local",
+        "processor": "arm",
+        "machine": "arm64",
+        "python_compiler": "Clang 17.0.0 (clang-1700.0.13.3)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.10.19",
+        "python_version": "3.10.19",
+        "python_build": [
+            "main",
+            "Oct  9 2025 15:25:03"
+        ],
+        "release": "24.6.0",
+        "system": "Darwin",
+        "cpu": {
+            "python_version": "3.10.19.final.0 (64 bit)",
+            "cpuinfo_version": [
+                9,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "9.0.0",
+            "arch": "ARM_8",
+            "bits": 64,
+            "count": 10,
+            "arch_string_raw": "arm64",
+            "brand_raw": "Apple M1 Max"
+        }
+    },
+    "commit_info": {
+        "id": "a9744133a5fb227201caac014fba65c41ae9df3d",
+        "time": "2025-11-06T16:55:46-05:00",
+        "author_time": "2025-11-06T16:55:46-05:00",
+        "dirty": true,
+        "project": "benchpress",
+        "branch": "main"
+    },
+    "benchmarks": [
+        {
+            "group": "Transpile - Device",
+            "name": "test_QFT_100_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_QFT_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.14399441701243632,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "cx": 5913,
+                    "rz": 3310,
+                    "swap": 2343,
+                    "u2": 97,
+                    "unitary": 7
+                },
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 20.124202582985163,
+                "max": 20.124202582985163,
+                "mean": 20.124202582985163,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 20.124202582985163,
+                "iqr": 0.0,
+                "q1": 20.124202582985163,
+                "q3": 20.124202582985163,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 20.124202582985163,
+                "hd15iqr": 20.124202582985163,
+                "ops": 0.04969140992674618,
+                "total": 20.124202582985163,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_QV_100_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_QV_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.9855399999942165,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "cx": 30110,
+                    "swap": 21026,
+                    "unitary": 4994
+                },
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 59.29004612501012,
+                "max": 59.29004612501012,
+                "mean": 59.29004612501012,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 59.29004612501012,
+                "iqr": 0.0,
+                "q1": 59.29004612501012,
+                "q3": 59.29004612501012,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 59.29004612501012,
+                "hd15iqr": 59.29004612501012,
+                "ops": 0.016866237511294048,
+                "total": 59.29004612501012,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_circSU2_89_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_circSU2_89_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 89,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {},
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.048493584006791934,
+                "max": 0.056364916992606595,
+                "mean": 0.05140686021227988,
+                "stddev": 0.0024703651710123583,
+                "rounds": 14,
+                "median": 0.050698229009867646,
+                "iqr": 0.004442875011591241,
+                "q1": 0.049243499990552664,
+                "q3": 0.053686375002143905,
+                "iqr_outliers": 0,
+                "stddev_outliers": 3,
+                "outliers": "3;0",
+                "ld15iqr": 0.048493584006791934,
+                "hd15iqr": 0.056364916992606595,
+                "ops": 19.45265662735659,
+                "total": 0.7196960429719184,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_circSU2_100_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_circSU2_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {},
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.04831845799344592,
+                "max": 0.05568141699768603,
+                "mean": 0.05055874737990962,
+                "stddev": 0.001530288459862872,
+                "rounds": 16,
+                "median": 0.050440646009519696,
+                "iqr": 0.0008478549862047657,
+                "q1": 0.04994437450659461,
+                "q3": 0.05079222949279938,
+                "iqr_outliers": 2,
+                "stddev_outliers": 2,
+                "outliers": "2;2",
+                "ld15iqr": 0.04944825000711717,
+                "hd15iqr": 0.05568141699768603,
+                "ops": 19.778971035136188,
+                "total": 0.8089399580785539,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_BV_100_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_BV_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "h": 198,
+                    "swap": 105,
+                    "cx": 99,
+                    "measure": 99,
+                    "u2": 1,
+                    "barrier": 1
+                },
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.3827343749871943,
+                "max": 0.428015499986941,
+                "mean": 0.39976945832798566,
+                "stddev": 0.02463451359615972,
+                "rounds": 3,
+                "median": 0.38855850000982173,
+                "iqr": 0.03396084374981001,
+                "q1": 0.38419040624285117,
+                "q3": 0.4181512499926612,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.3827343749871943,
+                "hd15iqr": 0.428015499986941,
+                "ops": 2.501441716389357,
+                "total": 1.199308374983957,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_square_heisenberg_100_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_square_heisenberg_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.02267837501130998,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "swap": 237,
+                    "unitary": 180
+                },
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.9346894590125885,
+                "max": 0.9346894590125885,
+                "mean": 0.9346894590125885,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 0.9346894590125885,
+                "iqr": 0.0,
+                "q1": 0.9346894590125885,
+                "q3": 0.9346894590125885,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 0.9346894590125885,
+                "hd15iqr": 0.9346894590125885,
+                "ops": 1.0698740532030884,
+                "total": 0.9346894590125885,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_QAOA_100_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_QAOA_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.007212249998701736,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "cx": 3305,
+                    "swap": 1682,
+                    "rz": 585,
+                    "rx": 298,
+                    "u2": 98,
+                    "unitary": 3
+                },
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 11.46896908301278,
+                "max": 11.46896908301278,
+                "mean": 11.46896908301278,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 11.46896908301278,
+                "iqr": 0.0,
+                "q1": 11.46896908301278,
+                "q3": 11.46896908301278,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 11.46896908301278,
+                "hd15iqr": 11.46896908301278,
+                "ops": 0.08719179489995715,
+                "total": 11.46896908301278,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_BVlike_simplification_transpile",
+            "fullname": "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_BVlike_simplification_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "z": 1,
+                    "x": 1
+                },
+                "output_gate_count_2q": 0,
+                "output_depth_2q": 0
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.049233124998863786,
+                "max": 0.08378883299883455,
+                "mean": 0.053939190889267546,
+                "stddev": 0.007576514447349478,
+                "rounds": 19,
+                "median": 0.05224020898458548,
+                "iqr": 0.003325333003886044,
+                "q1": 0.05058435474347789,
+                "q3": 0.05390968774736393,
+                "iqr_outliers": 2,
+                "stddev_outliers": 1,
+                "outliers": "1;2",
+                "ld15iqr": 0.049233124998863786,
+                "hd15iqr": 0.05896124997525476,
+                "ops": 18.53939563262847,
+                "total": 1.0248446268960834,
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2026-03-16T12:36:33.694490+00:00",
+    "version": "4.0.0",
+    "qiskit_info": {
+        "qiskit": "2.3.1",
+        "qiskit_ibm_runtime": "0.45.1",
+        "qiskit_ibm_transpiler": "0.18.0"
+    },
+    "total_duration": 1997.4858691692352,
+    "env_info": {
+        "numpy": "2.2.6",
+        "scipy": "1.15.3"
+    },
+    "test_status_counts": {
+        "passed": 2,
+        "failed": 7,
+        "xfailed": 0,
+        "skipped": 0
+    },
+    "test_dumps": {
+        "passed": {
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_circSU2_89_transpile": {
+                "duration": 13.537754958000733,
+                "exception": "None",
+                "keywords": {
+                    "test_circSU2_89_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_circSU2_100_transpile": {
+                "duration": 13.495553749991814,
+                "exception": "None",
+                "keywords": {
+                    "test_circSU2_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            }
+        },
+        "failed": {
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_QFT_100_transpile": {
+                "duration": 92.30738283399842,
+                "exception": "self = <benchpress.qiskit_transpiler_service_gym.device_transpile.test_summit.TestWorkoutDeviceTranspile100Q object at 0x179e78fd0>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x179e78f10>\n\n    def test_QFT_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q QFT circuit against target backend\"\"\"\n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"qft\") + \"qft_N100.qasm\", benchmark\n        )\n    \n        @benchmark\n        def result():\n            trans_qc = TRANS_SERVICE.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n\nbenchpress/qiskit_transpiler_service_gym/device_transpile/test_summit.py:55: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncircuit = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x17aa4b850>, backend = <IBMBackend('ibm_marrakesh')>\n\n    def qiskit_circuit_validation(circuit, backend):\n        \"\"\"Validate that input circuit matches gate set\n        and topology of target backend\n    \n        Parameters:\n            circuit (QuantumCircuit): Input circuit\n            backend (BackendV2): Target backend\n        \"\"\"\n        circuit_ops = set(circuit.count_ops().keys())\n        backend_ops = set(backend.operation_names)\n        # Add barrier to backend ops\n        backend_ops.add(\"barrier\")\n        diff_set = set(circuit_ops).difference(backend_ops)\n        if diff_set:\n>           raise Exception(f\"Circuit has gates outside backend basis set {diff_set}\")\nE           Exception: Circuit has gates outside backend basis set {'unitary', 'cx', 'swap', 'u2'}\n\nbenchpress/qiskit_gym/utils/validation.py:29: Exception",
+                "keywords": {
+                    "test_QFT_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_QV_100_transpile": {
+                "duration": 269.2867548330105,
+                "exception": "self = <benchpress.qiskit_transpiler_service_gym.device_transpile.test_summit.TestWorkoutDeviceTranspile100Q object at 0x179e791e0>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x17b95c1c0>\n\n    def test_QV_100_transpile(self, benchmark):\n        \"\"\"Compile 10Q QV circuit against target backend\"\"\"\n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"qv\") + \"qv_N100_12345.qasm\", benchmark\n        )\n    \n        @benchmark\n        def result():\n            trans_qc = TRANS_SERVICE.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n\nbenchpress/qiskit_transpiler_service_gym/device_transpile/test_summit.py:69: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncircuit = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x318324d00>, backend = <IBMBackend('ibm_marrakesh')>\n\n    def qiskit_circuit_validation(circuit, backend):\n        \"\"\"Validate that input circuit matches gate set\n        and topology of target backend\n    \n        Parameters:\n            circuit (QuantumCircuit): Input circuit\n            backend (BackendV2): Target backend\n        \"\"\"\n        circuit_ops = set(circuit.count_ops().keys())\n        backend_ops = set(backend.operation_names)\n        # Add barrier to backend ops\n        backend_ops.add(\"barrier\")\n        diff_set = set(circuit_ops).difference(backend_ops)\n        if diff_set:\n>           raise Exception(f\"Circuit has gates outside backend basis set {diff_set}\")\nE           Exception: Circuit has gates outside backend basis set {'cx', 'unitary', 'swap'}\n\nbenchpress/qiskit_gym/utils/validation.py:29: Exception",
+                "keywords": {
+                    "test_QV_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_BV_100_transpile": {
+                "duration": 15.005379125010222,
+                "exception": "self = <benchpress.qiskit_transpiler_service_gym.device_transpile.test_summit.TestWorkoutDeviceTranspile100Q object at 0x179e79a20>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x30ec2e3e0>\n\n    def test_BV_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q BV circuit against target backend\"\"\"\n        circuit = bv_all_ones(100)\n        input_circuit_properties(circuit, benchmark)\n    \n        @benchmark\n        def result():\n            trans_qc = TRANS_SERVICE.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n\nbenchpress/qiskit_transpiler_service_gym/device_transpile/test_summit.py:108: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncircuit = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x30f76ab00>, backend = <IBMBackend('ibm_marrakesh')>\n\n    def qiskit_circuit_validation(circuit, backend):\n        \"\"\"Validate that input circuit matches gate set\n        and topology of target backend\n    \n        Parameters:\n            circuit (QuantumCircuit): Input circuit\n            backend (BackendV2): Target backend\n        \"\"\"\n        circuit_ops = set(circuit.count_ops().keys())\n        backend_ops = set(backend.operation_names)\n        # Add barrier to backend ops\n        backend_ops.add(\"barrier\")\n        diff_set = set(circuit_ops).difference(backend_ops)\n        if diff_set:\n>           raise Exception(f\"Circuit has gates outside backend basis set {diff_set}\")\nE           Exception: Circuit has gates outside backend basis set {'u2', 'cx', 'swap', 'h'}\n\nbenchpress/qiskit_gym/utils/validation.py:29: Exception",
+                "keywords": {
+                    "test_BV_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_square_heisenberg_100_transpile": {
+                "duration": 16.4903567500005,
+                "exception": "self = <benchpress.qiskit_transpiler_service_gym.device_transpile.test_summit.TestWorkoutDeviceTranspile100Q object at 0x179e79960>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x30fb70a90>\n\n    def test_square_heisenberg_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q square-Heisenberg circuit against target backend\"\"\"\n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"square-heisenberg\")\n            + \"square_heisenberg_N100.qasm\",\n            benchmark,\n        )\n    \n        @benchmark\n        def result():\n            trans_qc = TRANS_SERVICE.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n\nbenchpress/qiskit_transpiler_service_gym/device_transpile/test_summit.py:124: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncircuit = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x30f7c7c40>, backend = <IBMBackend('ibm_marrakesh')>\n\n    def qiskit_circuit_validation(circuit, backend):\n        \"\"\"Validate that input circuit matches gate set\n        and topology of target backend\n    \n        Parameters:\n            circuit (QuantumCircuit): Input circuit\n            backend (BackendV2): Target backend\n        \"\"\"\n        circuit_ops = set(circuit.count_ops().keys())\n        backend_ops = set(backend.operation_names)\n        # Add barrier to backend ops\n        backend_ops.add(\"barrier\")\n        diff_set = set(circuit_ops).difference(backend_ops)\n        if diff_set:\n>           raise Exception(f\"Circuit has gates outside backend basis set {diff_set}\")\nE           Exception: Circuit has gates outside backend basis set {'unitary', 'swap'}\n\nbenchpress/qiskit_gym/utils/validation.py:29: Exception",
+                "keywords": {
+                    "test_square_heisenberg_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_QAOA_100_transpile": {
+                "duration": 60.48474454099778,
+                "exception": "self = <benchpress.qiskit_transpiler_service_gym.device_transpile.test_summit.TestWorkoutDeviceTranspile100Q object at 0x179e79300>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x30f7b2470>\n\n    def test_QAOA_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q QAOA circuit against target backend\"\"\"\n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"qaoa\") + \"qaoa_barabasi_albert_N100_3reps.qasm\",\n            benchmark,\n        )\n    \n        @benchmark\n        def result():\n            trans_qc = TRANS_SERVICE.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n\nbenchpress/qiskit_transpiler_service_gym/device_transpile/test_summit.py:139: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncircuit = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x31ec5ace0>, backend = <IBMBackend('ibm_marrakesh')>\n\n    def qiskit_circuit_validation(circuit, backend):\n        \"\"\"Validate that input circuit matches gate set\n        and topology of target backend\n    \n        Parameters:\n            circuit (QuantumCircuit): Input circuit\n            backend (BackendV2): Target backend\n        \"\"\"\n        circuit_ops = set(circuit.count_ops().keys())\n        backend_ops = set(backend.operation_names)\n        # Add barrier to backend ops\n        backend_ops.add(\"barrier\")\n        diff_set = set(circuit_ops).difference(backend_ops)\n        if diff_set:\n>           raise Exception(f\"Circuit has gates outside backend basis set {diff_set}\")\nE           Exception: Circuit has gates outside backend basis set {'cx', 'swap', 'u2', 'rx', 'unitary'}\n\nbenchpress/qiskit_gym/utils/validation.py:29: Exception",
+                "keywords": {
+                    "test_QAOA_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_BVlike_simplification_transpile": {
+                "duration": 13.835278875019867,
+                "exception": "self = <benchpress.qiskit_transpiler_service_gym.device_transpile.test_summit.TestWorkoutDeviceTranspile100Q object at 0x179e79180>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x30f70f610>\n\n    def test_BVlike_simplification_transpile(self, benchmark):\n        \"\"\"Transpile a BV-like circuit that should collapse down\n        into a single X and Z gate on a target device\n        \"\"\"\n        circuit = trivial_bvlike_circuit(100)\n        input_circuit_properties(circuit, benchmark)\n    \n        @benchmark\n        def result():\n            trans_qc = TRANS_SERVICE.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n\nbenchpress/qiskit_transpiler_service_gym/device_transpile/test_summit.py:154: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\ncircuit = <qiskit.circuit.quantumcircuit.QuantumCircuit object at 0x17ab4af80>, backend = <IBMBackend('ibm_marrakesh')>\n\n    def qiskit_circuit_validation(circuit, backend):\n        \"\"\"Validate that input circuit matches gate set\n        and topology of target backend\n    \n        Parameters:\n            circuit (QuantumCircuit): Input circuit\n            backend (BackendV2): Target backend\n        \"\"\"\n        circuit_ops = set(circuit.count_ops().keys())\n        backend_ops = set(backend.operation_names)\n        # Add barrier to backend ops\n        backend_ops.add(\"barrier\")\n        diff_set = set(circuit_ops).difference(backend_ops)\n        if diff_set:\n>           raise Exception(f\"Circuit has gates outside backend basis set {diff_set}\")\nE           Exception: Circuit has gates outside backend basis set {'z'}\n\nbenchpress/qiskit_gym/utils/validation.py:29: Exception",
+                "keywords": {
+                    "test_BVlike_simplification_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_transpiler_service_gym/device_transpile/test_summit.py::TestWorkoutDeviceTranspile100Q::test_clifford_100_transpile": {
+                "duration": 61.502958041994134,
+                "exception": "Function result timed out after 600.0 seconds\n\nDuring handling of the above exception, another exception occurred:\ntakes longer than 600 secs. It will be included to skipfile.txt",
+                "keywords": {
+                    "test_clifford_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_summit.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_transpiler_service_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            }
+        },
+        "xfailed": {},
+        "skipped": {}
+    }
+}

@@ -1,0 +1,565 @@
+{
+    "machine_info": {
+        "node": "Durus-MacBook-Pro.local",
+        "processor": "arm",
+        "machine": "arm64",
+        "python_compiler": "Clang 17.0.0 (clang-1700.0.13.3)",
+        "python_implementation": "CPython",
+        "python_implementation_version": "3.14.0",
+        "python_version": "3.14.0",
+        "python_build": [
+            "main",
+            "Oct  7 2025 09:34:52"
+        ],
+        "release": "24.6.0",
+        "system": "Darwin",
+        "cpu": {
+            "python_version": "3.14.0.final.0 (64 bit)",
+            "cpuinfo_version": [
+                9,
+                0,
+                0
+            ],
+            "cpuinfo_version_string": "9.0.0",
+            "arch": "ARM_8",
+            "bits": 64,
+            "count": 10,
+            "arch_string_raw": "arm64",
+            "brand_raw": "Apple M1 Max"
+        }
+    },
+    "commit_info": {
+        "id": "a9744133a5fb227201caac014fba65c41ae9df3d",
+        "time": "2025-11-06T16:55:46-05:00",
+        "author_time": "2025-11-06T16:55:46-05:00",
+        "dirty": true,
+        "project": "benchpress",
+        "branch": "main"
+    },
+    "benchmarks": [
+        {
+            "group": "Transpile - Device",
+            "name": "test_QFT_100_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_QFT_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.06101774997659959,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "sx": 24138,
+                    "cz": 11994,
+                    "rz": 10613,
+                    "x": 548
+                },
+                "output_gate_count_2q": 11994,
+                "output_depth_2q": 2726
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.6118170830013696,
+                "max": 0.6285592920030467,
+                "mean": 0.6201881875022082,
+                "stddev": 0.011838529517128342,
+                "rounds": 2,
+                "median": 0.6201881875022082,
+                "iqr": 0.01674220900167711,
+                "q1": 0.6118170830013696,
+                "q3": 0.6285592920030467,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 0.6118170830013696,
+                "hd15iqr": 0.6285592920030467,
+                "ops": 1.6124138126968752,
+                "total": 1.2403763750044163,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_QV_100_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_QV_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "sx": 223132,
+                    "cz": 97170,
+                    "rz": 71914,
+                    "x": 35
+                },
+                "output_gate_count_2q": 97170,
+                "output_depth_2q": 10053
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 5.072906458022771,
+                "max": 5.072906458022771,
+                "mean": 5.072906458022771,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 5.072906458022771,
+                "iqr": 0.0,
+                "q1": 5.072906458022771,
+                "q3": 5.072906458022771,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 5.072906458022771,
+                "hd15iqr": 5.072906458022771,
+                "ops": 0.1971256533655388,
+                "total": 5.072906458022771,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_circSU2_89_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_circSU2_89_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 89,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "rz": 1727,
+                    "sx": 1477,
+                    "cz": 390,
+                    "x": 6
+                },
+                "output_gate_count_2q": 390,
+                "output_depth_2q": 384
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.8922494589933194,
+                "max": 2.8922494589933194,
+                "mean": 2.8922494589933194,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 2.8922494589933194,
+                "iqr": 0.0,
+                "q1": 2.8922494589933194,
+                "q3": 2.8922494589933194,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 2.8922494589933194,
+                "hd15iqr": 2.8922494589933194,
+                "ops": 0.34575164216577,
+                "total": 2.8922494589933194,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_circSU2_100_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_circSU2_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "rz": 1800,
+                    "sx": 1397,
+                    "cz": 300
+                },
+                "output_gate_count_2q": 300,
+                "output_depth_2q": 300
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.0190900839807,
+                "max": 0.032444250013213605,
+                "mean": 0.020637676793206803,
+                "stddev": 0.0023834977070270446,
+                "rounds": 29,
+                "median": 0.02023087500128895,
+                "iqr": 0.0013759067442151718,
+                "q1": 0.01954370800376637,
+                "q3": 0.02091961474798154,
+                "iqr_outliers": 1,
+                "stddev_outliers": 1,
+                "outliers": "1;1",
+                "ld15iqr": 0.0190900839807,
+                "hd15iqr": 0.032444250013213605,
+                "ops": 48.455066431177215,
+                "total": 0.5984926270029973,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_BV_100_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_BV_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "sx": 885,
+                    "rz": 616,
+                    "cz": 490,
+                    "measure": 99,
+                    "x": 46
+                },
+                "output_gate_count_2q": 490,
+                "output_depth_2q": 385
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.05355462501756847,
+                "max": 0.0607177909987513,
+                "mean": 0.0572285300554035,
+                "stddev": 0.0018504985011464773,
+                "rounds": 18,
+                "median": 0.05724300000292715,
+                "iqr": 0.0023989580222405493,
+                "q1": 0.056032166990917176,
+                "q3": 0.058431125013157725,
+                "iqr_outliers": 0,
+                "stddev_outliers": 6,
+                "outliers": "6;0",
+                "ld15iqr": 0.05355462501756847,
+                "hd15iqr": 0.0607177909987513,
+                "ops": 17.47380194864153,
+                "total": 1.030113540997263,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_square_heisenberg_100_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_square_heisenberg_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.020897375012282282,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "sx": 2537,
+                    "rz": 1568,
+                    "cz": 1131,
+                    "x": 116
+                },
+                "output_gate_count_2q": 1131,
+                "output_depth_2q": 285
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.08544741600053385,
+                "max": 0.10005420900415629,
+                "mean": 0.09490596183362261,
+                "stddev": 0.004516006842405697,
+                "rounds": 12,
+                "median": 0.09614499998860992,
+                "iqr": 0.0073676245083333924,
+                "q1": 0.09105231300054584,
+                "q3": 0.09841993750887923,
+                "iqr_outliers": 0,
+                "stddev_outliers": 3,
+                "outliers": "3;0",
+                "ld15iqr": 0.08544741600053385,
+                "hd15iqr": 0.10005420900415629,
+                "ops": 10.53674585536656,
+                "total": 1.1388715420034714,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_QAOA_100_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_QAOA_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.005919582996284589,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "sx": 16453,
+                    "cz": 8383,
+                    "rz": 6003,
+                    "x": 411
+                },
+                "output_gate_count_2q": 8383,
+                "output_depth_2q": 1774
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 0.3301672499801498,
+                "max": 0.3504363749816548,
+                "mean": 0.3414915833272971,
+                "stddev": 0.010341954413090985,
+                "rounds": 3,
+                "median": 0.34387112502008677,
+                "iqr": 0.015201843751128763,
+                "q1": 0.33359321874013403,
+                "q3": 0.3487950624912628,
+                "iqr_outliers": 0,
+                "stddev_outliers": 1,
+                "outliers": "1;0",
+                "ld15iqr": 0.3301672499801498,
+                "hd15iqr": 0.3504363749816548,
+                "ops": 2.9283298588403746,
+                "total": 1.0244747499818914,
+                "iterations": 1
+            }
+        },
+        {
+            "group": "Transpile - Device",
+            "name": "test_clifford_100_transpile",
+            "fullname": "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_clifford_100_transpile",
+            "params": null,
+            "param": null,
+            "extra_info": {
+                "qasm_load_time": 0.01942316599888727,
+                "input_num_qubits": 100,
+                "output_num_qubits": 156,
+                "output_circuit_operations": {
+                    "sx": 126973,
+                    "cz": 65775,
+                    "rz": 36247,
+                    "x": 2716
+                },
+                "output_gate_count_2q": 65775,
+                "output_depth_2q": 20205
+            },
+            "options": {
+                "disable_gc": false,
+                "timer": "perf_counter",
+                "min_rounds": 1,
+                "max_time": 1.0,
+                "min_time": 5e-06,
+                "warmup": false
+            },
+            "stats": {
+                "min": 2.3832779999938793,
+                "max": 2.3832779999938793,
+                "mean": 2.3832779999938793,
+                "stddev": 0,
+                "rounds": 1,
+                "median": 2.3832779999938793,
+                "iqr": 0.0,
+                "q1": 2.3832779999938793,
+                "q3": 2.3832779999938793,
+                "iqr_outliers": 0,
+                "stddev_outliers": 0,
+                "outliers": "0;0",
+                "ld15iqr": 2.3832779999938793,
+                "hd15iqr": 2.3832779999938793,
+                "ops": 0.4195901611153076,
+                "total": 2.3832779999938793,
+                "iterations": 1
+            }
+        }
+    ],
+    "datetime": "2026-03-13T10:49:52.540670+00:00",
+    "version": "4.0.0",
+    "qiskit_info": {
+        "qiskit": "2.3.0",
+        "qiskit_ibm_runtime": "0.45.1"
+    },
+    "total_duration": 109.95615005493164,
+    "env_info": {
+        "numpy": "2.4.2",
+        "scipy": "1.17.1"
+    },
+    "test_status_counts": {
+        "passed": 0,
+        "failed": 8,
+        "xfailed": 0,
+        "skipped": 1
+    },
+    "test_dumps": {
+        "passed": {},
+        "failed": {
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_QFT_100_transpile": {
+                "duration": 10.82581008298439,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11c3596d0>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x11c3aeba0>\n\n    def test_QFT_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q QFT circuit against target backend\"\"\"\n    \n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"qft\") + \"qft_N100.qasm\", benchmark\n        )\n    \n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:44: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_QFT_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_QV_100_transpile": {
+                "duration": 38.058534082985716,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11c35afd0>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x11ddae210>\n\n    def test_QV_100_transpile(self, benchmark):\n        \"\"\"Compile 10Q QV circuit against target backend\"\"\"\n        circuit = QuantumVolume(100, 100, seed=12345)\n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:57: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_QV_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_circSU2_89_transpile": {
+                "duration": 15.570461124996655,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11c34b950>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x11ce460d0>\n\n    def test_circSU2_89_transpile(self, benchmark):\n        \"\"\"Compile 89Q circSU2 circuit against target backend\"\"\"\n        circuit = EfficientSU2(89, reps=3, entanglement=\"circular\")\n        input_circuit_properties(circuit, benchmark)\n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:71: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_circSU2_89_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_circSU2_100_transpile": {
+                "duration": 4.511264417000348,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11c34b6f0>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x16a69ab10>\n\n    def test_circSU2_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q circSU2 circuit against target backend\"\"\"\n        circuit = EfficientSU2(100, reps=3, entanglement=\"circular\")\n        input_circuit_properties(circuit, benchmark)\n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:85: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_circSU2_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_BV_100_transpile": {
+                "duration": 4.541568292013835,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11c3bda30>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x16a698050>\n\n    def test_BV_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q BV circuit against target backend\"\"\"\n        circuit = bv_all_ones(100)\n        input_circuit_properties(circuit, benchmark)\n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:99: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_BV_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_square_heisenberg_100_transpile": {
+                "duration": 5.174463208008092,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11c36d260>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x16a69ac40>\n\n    def test_square_heisenberg_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q square-Heisenberg circuit against target backend\"\"\"\n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"square-heisenberg\")\n            + \"square_heisenberg_N100.qasm\",\n            benchmark,\n        )\n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:116: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_square_heisenberg_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_QAOA_100_transpile": {
+                "duration": 6.37787841699901,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11c36cd10>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x16a699cd0>\n\n    def test_QAOA_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q QAOA circuit against target backend\"\"\"\n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"qaoa\") + \"qaoa_barabasi_albert_N100_3reps.qasm\",\n            benchmark,\n        )\n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:132: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_QAOA_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            },
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_clifford_100_transpile": {
+                "duration": 21.21034416698967,
+                "exception": "self = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n>           return self._configuration.__getattribute__(name)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE           AttributeError: 'QasmBackendConfiguration' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:217: AttributeError\n\nDuring handling of the above exception, another exception occurred:\n\nself = <benchpress.qiskit_gym.device_transpile.test_custom_backend.TestWorkoutDeviceTranspile100Q object at 0x11cb8c450>\nbenchmark = <pytest_benchmark.fixture.BenchmarkFixture object at 0x16a69ba80>\n\n    def test_clifford_100_transpile(self, benchmark):\n        \"\"\"Compile 100Q Clifford circuit against target backend\"\"\"\n        circuit = qasm_circuit_loader(\n            Configuration.get_qasm_dir(\"clifford\") + \"clifford_100_12345.qasm\",\n            benchmark,\n        )\n    \n        pm = generate_preset_pass_manager(OPTIMIZATION_LEVEL, BACKEND)\n    \n        @benchmark\n        def result():\n            trans_qc = pm.run(circuit)\n            return trans_qc\n    \n        output_circuit_properties(result, TWO_Q_GATE, benchmark)\n>       assert circuit_validator(result, BACKEND)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\nbenchpress/qiskit_gym/device_transpile/test_custom_backend.py:149: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nbenchpress/utilities/validation/validation.py:29: in circuit_validator\n    qiskit_circuit_validation(circuit, backend)\nbenchpress/qiskit_gym/utils/validation.py:34: in qiskit_circuit_validation\n    for gate in circuit.get_instructions(backend.two_q_gate_type):\n                                         ^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <IBMBackend('ibm_marrakesh')>, name = 'two_q_gate_type'\n\n    def __getattr__(self, name: str) -> Any:\n        \"\"\"Gets attribute from self or configuration\n    \n        This magic method executes when user accesses an attribute that\n        does not yet exist on IBMBackend class.\n        \"\"\"\n        # Prevent recursion since these properties are accessed within __getattr__\n        if name in [\"_properties\", \"_target\", \"_configuration\"]:\n            raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\n    \n        # Lazy load properties and pulse defaults and construct the target object.\n        self.properties()\n        self._convert_to_target()\n        # Check if the attribute now is available on IBMBackend class due to above steps\n        try:\n            return super().__getattribute__(name)\n        except AttributeError:\n            pass\n        # If attribute is still not available on IBMBackend class,\n        # fallback to check if the attribute is available in configuration\n        try:\n            return self._configuration.__getattribute__(name)\n        except AttributeError:\n>           raise AttributeError(\n                \"'{}' object has no attribute '{}'\".format(self.__class__.__name__, name)\n            )\nE           AttributeError: 'IBMBackend' object has no attribute 'two_q_gate_type'\n\n.venv/lib/python3.14/site-packages/qiskit_ibm_runtime/ibm_backend.py:219: AttributeError",
+                "keywords": {
+                    "test_clifford_100_transpile": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            }
+        },
+        "xfailed": {},
+        "skipped": {
+            "qiskit_gym/device_transpile/test_custom_backend.py::TestWorkoutDeviceTranspile100Q::test_BVlike_simplification_transpile": {
+                "duration": 0.00010545799159444869,
+                "exception": "('/Users/durutomruk/code/quantumbench/benchpress/benchpress/workouts/device_transpile/device_transpile_100Q.py', 59, 'Skipped: Not implemented')",
+                "keywords": {
+                    "test_BVlike_simplification_transpile": 1,
+                    "skip": 1,
+                    "pytestmark": 1,
+                    "TestWorkoutDeviceTranspile100Q": 1,
+                    "benchmark": 1,
+                    "test_custom_backend.py": 1,
+                    "device_transpile": 1,
+                    "qiskit_gym": 1,
+                    "benchpress": 1,
+                    "": 1
+                }
+            }
+        }
+    }
+}
